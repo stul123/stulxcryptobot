@@ -73,13 +73,11 @@ body {
   background: var(--Blue-12, rgba(41, 126, 226, 0.12));
   color: var(--Deep-blue, #297EE2);
   text-align: center;
-  /* desktop/Button */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 120%;
-  /* 24px */
 }
 .top_block .main_top_block {
   display: flex;
@@ -95,13 +93,11 @@ body {
 }
 .top_block .main_top_block .left .title {
   color: var(--Dark, #0D0D12);
-  /* desktop/H1 header */
   font-family: Inter;
   font-size: 80px;
   font-style: normal;
   font-weight: 629;
   line-height: 110%;
-  /* 88px */
   letter-spacing: -2.4px;
   max-width: 690px;
 }
@@ -111,13 +107,11 @@ body {
 .top_block .main_top_block .left .text_under_title {
   max-width: 346px;
   color: var(--Dark, #0D0D12);
-  /* desktop/Base-text */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
-  /* 24px */
 }
 .top_block .main_top_block .left .btn_started_main {
   display: flex;
@@ -136,7 +130,6 @@ body {
   font-weight: 700;
   line-height: 120%;
   max-width: 196px;
-  /* 24px */
   cursor: pointer;
 }
 .top_block .main_top_block .left .populare {
@@ -149,13 +142,11 @@ body {
 }
 .top_block .main_top_block .left .populare p {
   color: var(--Dark, #0D0D12);
-  /* desktop/Base-text */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
-  /* 24px */
 }
 .top_block .main_top_block .top_phone {
   box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.1);
@@ -204,7 +195,7 @@ body {
 }
 .slider .slider_con .slider_block {
   opacity: 0;
-  display: flex;
+  display: none;
   transition: all 0.3s linear;
   width: 100%;
   justify-content: space-between;
@@ -215,7 +206,11 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 40px;
+  width: 100%;
   background: var(--BG-pink, linear-gradient(340deg, #FAACA8 8.42%, #DDD6F3 91.45%));
+}
+.slider .slider_con .slider_block .photo_block img {
+  width: 100%;
 }
 .slider .slider_con .slider_block .main_block_slider {
   display: flex;
@@ -233,7 +228,6 @@ body {
 }
 .slider .slider_con .slider_block .main_block_slider .text_block .title {
   color: var(--White, #FFF);
-  /* desktop/H2 header */
   font-family: Inter;
   font-size: 56px;
   font-style: normal;
@@ -241,19 +235,21 @@ body {
   line-height: 110%;
   letter-spacing: -1.68px;
 }
+.slider .slider_con .slider_block .main_block_slider .text_block .title .auto_sales {
+  width: 302px;
+  display: inline-block;
+}
 .slider .slider_con .slider_block .main_block_slider .text_block .title span {
   color: var(--Blue, var(--General, #41A4DF));
 }
 .slider .slider_con .slider_block .main_block_slider .text_block .under_title {
   color: var(--White, #FFF);
-  /* desktop/Base-text */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
   max-width: 341px;
-  /* 24px */
 }
 .slider .slider_con .slider_block .main_block_slider .text_block .open_api_btn {
   display: inline-flex;
@@ -266,13 +262,11 @@ body {
   background: var(--General, #41A4DF);
   color: var(--White, #FFF);
   text-align: center;
-  /* mobile/Button */
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 120%;
-  /* 21.6px */
   cursor: pointer;
 }
 .slider .slider_con .slider_btns {
@@ -300,13 +294,11 @@ body {
 }
 .slider .slider_con .slider_btns p {
   color: #FFF;
-  /* desktop/Description */
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 120%;
-  /* 16.8px */
   text-transform: uppercase;
 }
 
@@ -336,6 +328,9 @@ main .main_1 .accept_cryptocurrencies_sec {
   background: var(--Bg-light, #F7F9FB);
   padding: 42px 56px;
   gap: 42px;
+}
+main .main_1 .accept_cryptocurrencies_sec .mob_crypto {
+  display: none;
 }
 main .main_1 .accept_cryptocurrencies_sec .text_block {
   display: flex;
@@ -371,7 +366,7 @@ main .main_1 .accept_cryptocurrencies_sec video {
 }
 main .main_1 .middle_block {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 20px;
   width: 100%;
@@ -379,11 +374,11 @@ main .main_1 .middle_block {
 main .main_1 .middle_block .left {
   display: flex;
   gap: 20px;
+  max-width: 488px;
   flex-direction: column;
 }
 main .main_1 .middle_block .left .one_click_block {
   width: 100%;
-  max-width: 488px;
   border-radius: 40px;
   background: var(--Bg-light, #F7F9FB);
   padding: 42px 56px;
@@ -403,29 +398,24 @@ main .main_1 .middle_block .left .one_click_block .text_block {
 }
 main .main_1 .middle_block .left .one_click_block .text_block .title {
   color: var(--Dark, #0D0D12);
-  /* desktop/H3 header */
   font-family: Inter;
   font-size: 42px;
   font-style: normal;
   font-weight: 629;
   line-height: 110%;
-  /* 46.2px */
   letter-spacing: -1.26px;
 }
 main .main_1 .middle_block .left .one_click_block .text_block .text {
   color: var(--Dark-80, rgba(17, 17, 17, 0.8));
-  /* desktop/Base-text */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
-  /* 24px */
 }
 main .main_1 .middle_block .left .one_click_block .text_block .text span,
 main .main_1 .middle_block .left .one_click_block .text_block .text a {
   color: var(--Blue, var(--General, #41A4DF));
-  /* desktop/Button */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
@@ -439,7 +429,6 @@ main .main_1 .middle_block .left .real_time_block {
   background: var(--Bg-light, #F7F9FB);
   padding: 42px 56px;
   gap: 16px;
-  max-width: 488px;
   width: 100%;
 }
 main .main_1 .middle_block .left .real_time_block video {
@@ -454,28 +443,23 @@ main .main_1 .middle_block .left .real_time_block .text_block {
 }
 main .main_1 .middle_block .left .real_time_block .text_block .title {
   color: var(--Dark, #0D0D12);
-  /* desktop/H3 header */
   font-family: Inter;
   font-size: 42px;
   font-style: normal;
   font-weight: 629;
   line-height: 110%;
-  /* 46.2px */
   letter-spacing: -1.26px;
 }
 main .main_1 .middle_block .left .real_time_block .text_block .text {
   color: var(--Dark-80, rgba(17, 17, 17, 0.8));
-  /* desktop/Base-text */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
-  /* 24px */
 }
 main .main_1 .middle_block .left .real_time_block .text_block .text span {
   color: var(--Blue, var(--General, #41A4DF));
-  /* desktop/Button */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
@@ -503,30 +487,25 @@ main .main_1 .middle_block .payment_statistics .text_block {
 }
 main .main_1 .middle_block .payment_statistics .text_block .title {
   color: var(--Dark, #0D0D12);
-  /* desktop/H3 header */
   font-family: Inter;
   font-size: 42px;
   font-style: normal;
   font-weight: 629;
   line-height: 110%;
-  /* 46.2px */
   letter-spacing: -1.26px;
 }
 main .main_1 .middle_block .payment_statistics .text_block .text {
   color: var(--Dark-80, rgba(17, 17, 17, 0.8));
-  /* desktop/Base-text */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
   max-width: 530px;
-  /* 24px */
 }
 main .main_1 .middle_block .payment_statistics .text_block .text span,
 main .main_1 .middle_block .payment_statistics .text_block .text a {
   color: var(--Blue, var(--General, #41A4DF));
-  /* desktop/Button */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
@@ -535,7 +514,7 @@ main .main_1 .middle_block .payment_statistics .text_block .text a {
 }
 main .main_1 .bot_block {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   width: 100%;
   gap: 20px;
@@ -560,28 +539,23 @@ main .main_1 .bot_block .send_coins_block .text_block {
 }
 main .main_1 .bot_block .send_coins_block .text_block .title {
   color: var(--Dark, #0D0D12);
-  /* desktop/H3 header */
   font-family: Inter;
   font-size: 42px;
   font-style: normal;
   font-weight: 629;
   line-height: 110%;
-  /* 46.2px */
   letter-spacing: -1.26px;
 }
 main .main_1 .bot_block .send_coins_block .text_block .text {
   color: var(--Dark-80, rgba(17, 17, 17, 0.8));
-  /* desktop/Base-text */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
-  /* 24px */
 }
 main .main_1 .bot_block .send_coins_block .text_block .text span {
   color: var(--Blue, var(--General, #41A4DF));
-  /* desktop/Button */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
@@ -609,28 +583,23 @@ main .main_1 .bot_block .anonymous_payments .text_block {
 }
 main .main_1 .bot_block .anonymous_payments .text_block .title {
   color: var(--Dark, #0D0D12);
-  /* desktop/H3 header */
   font-family: Inter;
   font-size: 42px;
   font-style: normal;
   font-weight: 629;
   line-height: 110%;
-  /* 46.2px */
   letter-spacing: -1.26px;
 }
 main .main_1 .bot_block .anonymous_payments .text_block .text {
   color: var(--Dark-80, rgba(17, 17, 17, 0.8));
-  /* desktop/Base-text */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
-  /* 24px */
 }
 main .main_1 .bot_block .anonymous_payments .text_block .text span {
   color: var(--Blue, var(--General, #41A4DF));
-  /* desktop/Button */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
@@ -649,20 +618,16 @@ main .quick_start_using_sec {
 }
 main .quick_start_using_sec .main_title {
   color: var(--Main-text, #252525);
-  /* desktop/H2 header */
   font-family: Inter;
   font-size: 56px;
   font-style: normal;
   font-weight: 629;
   line-height: 110%;
-  /* 61.6px */
   letter-spacing: -1.68px;
 }
 main .quick_start_using_sec .main_title span {
   color: var(--Main-akcent, #41A4DF);
-  /* desktop/H2 header */
   font-family: Inter;
-  font-size: 56px;
   font-style: normal;
   font-weight: 629;
   line-height: 110%;
@@ -692,36 +657,35 @@ main .quick_start_using_sec .quick_start_block .text_block .cifra {
   justify-content: center;
   color: #FFF;
   text-align: center;
-  /* desktop/H3 header */
   font-family: Inter;
   font-size: 42px;
   font-style: normal;
   font-weight: 629;
   line-height: 110%;
-  /* 46.2px */
   letter-spacing: -1.26px;
+}
+main .quick_start_using_sec .quick_start_block .text_block .text_con {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 main .quick_start_using_sec .quick_start_block .text_block .title {
   color: var(--Dark, #0D0D12);
-  /* desktop/H3 header */
   font-family: Inter;
   font-size: 42px;
   font-style: normal;
   font-weight: 629;
   line-height: 110%;
-  /* 46.2px */
   letter-spacing: -1.26px;
 }
 main .quick_start_using_sec .quick_start_block .text_block .mini_text {
   color: var(--Dark-80, rgba(17, 17, 17, 0.8));
-  /* desktop/Base-text */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
   max-width: 360px;
-  /* 24px */
 }
 main .quick_start_using_sec .quick_start_block .text_block .dop_text_block {
   display: flex;
@@ -730,18 +694,15 @@ main .quick_start_using_sec .quick_start_block .text_block .dop_text_block {
 }
 main .quick_start_using_sec .quick_start_block .text_block .dop_text_block li {
   color: var(--Blue, var(--General, #41A4DF));
-  /* desktop/Button */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 120%;
-  /* 24px */
   list-style: inside;
 }
 main .quick_start_using_sec .quick_start_block .text_block .dop_text_block li span {
   color: var(--Dark-80, rgba(17, 17, 17, 0.8));
-  /* desktop/Base-text */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
@@ -750,18 +711,15 @@ main .quick_start_using_sec .quick_start_block .text_block .dop_text_block li sp
 }
 main .quick_start_using_sec .quick_start_block .text_block .dop_text_block .text {
   color: var(--Dark, #0D0D12);
-  /* desktop/Base-text */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
-  /* 24px */
 }
 main .quick_start_using_sec .quick_start_block .text_block .dop_text_block .text a,
 main .quick_start_using_sec .quick_start_block .text_block .dop_text_block .text span {
   color: var(--Blue, var(--General, #41A4DF));
-  /* desktop/Button */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
@@ -835,35 +793,29 @@ main .main_2 .main_2_sec .crypto_pay_api .info_block {
 }
 main .main_2 .main_2_sec .crypto_pay_api .info_block .title {
   color: var(--White, #FFF);
-  /* desktop/H2 header */
   font-family: Inter;
   font-size: 56px;
   font-style: normal;
   font-weight: 629;
   line-height: 110%;
-  /* 61.6px */
   letter-spacing: -1.68px;
 }
 main .main_2 .main_2_sec .crypto_pay_api .info_block .text {
   color: var(--White, #FFF);
-  /* desktop/Base-text */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
-  /* 24px */
 }
 main .main_2 .main_2_sec .crypto_pay_api .info_block a {
   color: var(--White, #FFF);
   text-align: center;
-  /* mobile/Button */
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 120%;
-  /* 21.6px */
   max-width: 215px;
   padding: 18px 42px;
   border-radius: 900px;
@@ -888,31 +840,28 @@ main .main_2 .main_2_sec .for_dev .top_text {
 main .main_2 .main_2_sec .for_dev .top_text .title {
   color: var(--Dark, #0D0D12);
   text-align: center;
-  /* desktop/H2 header */
   font-family: Inter;
   font-size: 56px;
   font-style: normal;
   font-weight: 629;
   line-height: 110%;
-  /* 61.6px */
   letter-spacing: -1.68px;
 }
 main .main_2 .main_2_sec .for_dev .top_text .text {
   color: var(--Dark-80, rgba(17, 17, 17, 0.8));
   text-align: center;
-  /* desktop/Base-text */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
-  /* 24px */
   max-width: 570px;
 }
 main .main_2 .main_2_sec .for_dev .langs {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 24px;
 }
 main .main_2 .main_2_sec .for_dev .langs .lang_block {
@@ -925,13 +874,11 @@ main .main_2 .main_2_sec .for_dev .langs .lang_block {
 main .main_2 .main_2_sec .for_dev .langs .lang_block .title {
   color: var(--Dark-80, rgba(17, 17, 17, 0.8));
   text-align: center;
-  /* desktop/Button */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 120%;
-  /* 24px */
   width: 180px;
 }
 main .main_2 .main_2_sec .for_dev .open_chat {
@@ -940,13 +887,11 @@ main .main_2 .main_2_sec .for_dev .open_chat {
   padding: 18px 42px;
   color: var(--White, #FFF);
   text-align: center;
-  /* desktop/Button */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 120%;
-  /* 24px */
 }
 
 footer {
@@ -985,37 +930,31 @@ footer .footer_sec .top .footer_nav {
 footer .footer_sec .top .footer_nav a {
   color: var(--White, #FFF);
   text-align: center;
-  /* desktop/Button */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 120%;
-  /* 24px */
 }
 footer .footer_sec .top .btn_started_footer {
   color: var(--White, #FFF);
   text-align: center;
-  /* desktop/Button */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 120%;
-  /* 24px */
   padding: 18px 42px;
   border-radius: 900px;
   border: 1px solid var(--White-60, rgba(255, 255, 255, 0.6));
 }
 footer .footer_sec .bot_footer {
   color: var(--White, #FFF);
-  /* desktop/Button */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 120%;
-  /* 24px */
 }
 
 .black {
@@ -1054,13 +993,11 @@ footer .footer_sec .bot_footer {
   border: 1px solid var(--White-60, rgba(255, 255, 255, 0.6));
   color: var(--White, #FFF);
   text-align: center;
-  /* desktop/Button */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 120%;
-  /* 24px */
   background: none;
 }
 .black .slider {
@@ -1089,4 +1026,512 @@ footer .footer_sec .bot_footer {
 }
 .black main .main_2 .main_2_sec {
   background: #0D0D12;
+}
+
+@media screen and (max-width: 1200px) {
+  main .main_2 .main_2_sec .for_dev .langs {
+    justify-content: flex-start;
+  }
+  .top_block {
+    padding: 0 20px 150px 20px;
+  }
+  .slider .slider_con {
+    padding: 0 20px;
+  }
+  .slider .slider_con .slider_block .photo_block {
+    padding: 20px !important;
+  }
+  .slider .slider_con .slider_sec {
+    max-height: 415px;
+  }
+  main .main_1 .bot_block,
+  main .main_1 .middle_block {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .quick_start_using_sec .quick_start_block {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  main .quick_start_using_sec .colrev {
+    flex-direction: column !important;
+  }
+  .slider .slider_con {
+    gap: 60px;
+  }
+  .slider .slider_con .slider_block {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .slider .slider_con .slider_block .main_block_slider .text_block .title {
+    width: 200px;
+  }
+  .slider .slider_con .slider_sec {
+    max-height: 484px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .slider .slider_con .slider_block .main_block_slider .text_block .title {
+    font-size: 40px;
+  }
+  .slider .slider_con .slider_sec {
+    max-height: 370px;
+  }
+  .slider .slider_con .slider_block .main_block_slider .text_block .title {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .top_block {
+    padding: 0 20px 114px 20px;
+  }
+  .top_block header {
+    padding: 44px 0 30px 0;
+  }
+  .top_block header .header_nav {
+    display: none;
+  }
+  .top_block header .logo {
+    width: 46px;
+    border-radius: 12px;
+  }
+  .top_block header .header_btns {
+    gap: 8px;
+  }
+  .top_block header .header_btns .btn_started_header {
+    padding: 12px 32px;
+    font-size: 18px;
+  }
+  .top_block .main_top_block {
+    flex-direction: column;
+    gap: 52px;
+  }
+  .top_block .main_top_block .left {
+    gap: 12px;
+    align-items: center;
+  }
+  .top_block .main_top_block .left .title {
+    padding-bottom: 12px;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 629;
+    line-height: 110%;
+    letter-spacing: -1.38px;
+    text-align: center;
+  }
+  .top_block .main_top_block .left .text_under_title {
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    max-width: 326px;
+  }
+  .top_block .main_top_block .left .btn_started_main {
+    padding: 12px 32px;
+  }
+  .top_block .main_top_block .left .populare {
+    align-items: center;
+    padding-top: 12px;
+  }
+  .top_block .main_top_block .left .populare img {
+    max-width: 250px;
+  }
+  .top_block .main_top_block .left .populare p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  .slider {
+    padding: 32px 20px;
+  }
+  .slider .slider_con {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .slider .slider_con .slider_sec {
+    max-height: 718px;
+  }
+  .slider .slider_con .slider_sec .slider_block1 .photo_block {
+    padding: 93.412px 28.832px 93.048px 28.145px;
+  }
+  .slider .slider_con .slider_sec .slider_block {
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider .slider_con .slider_sec .slider_block .photo_block {
+    width: 100%;
+    border-radius: 24px;
+  }
+  .slider .slider_con .slider_sec .slider_block .photo_block img {
+    max-width: 300px;
+  }
+  .slider .slider_con .slider_sec .slider_block .main_block_slider {
+    max-width: 100%;
+    width: 100%;
+  }
+  .slider .slider_con .slider_sec .slider_block .main_block_slider .text_block {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+  .slider .slider_con .slider_sec .slider_block .main_block_slider .text_block .title {
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 629;
+    line-height: 110%;
+    letter-spacing: -0.96px;
+  }
+  .slider .slider_con .slider_sec .slider_block .main_block_slider .text_block .title .auto_sales {
+    width: 100%;
+  }
+  .slider .slider_con .slider_sec .slider_block .main_block_slider .text_block .under_title {
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: center;
+    max-width: 100%;
+    height: 66px;
+  }
+  .slider .slider_con .slider_sec .slider_block .main_block_slider .text_block .open_api_btn {
+    padding: 12px 0;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    width: 100%;
+  }
+  .slider .slider_con .slider_btns {
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+  }
+  .slider .slider_con .slider_btns .line {
+    width: 100%;
+    height: 4px;
+  }
+  main {
+    padding-top: 0;
+  }
+  main .main_1 {
+    padding: 80px 20px;
+    gap: 16px;
+  }
+  main .main_1 .accept_cryptocurrencies_sec {
+    gap: 24px;
+    border-radius: 24px;
+    padding: 32px;
+  }
+  main .main_1 .accept_cryptocurrencies_sec .mob_crypto {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    row-gap: 10px;
+  }
+  main .main_1 .accept_cryptocurrencies_sec .mob_crypto img {
+    margin-left: 10px;
+  }
+  main .main_1 .accept_cryptocurrencies_sec .mob_crypto img:first-child {
+    margin-left: 0;
+  }
+  main .main_1 .accept_cryptocurrencies_sec video {
+    display: none;
+  }
+  main .main_1 .accept_cryptocurrencies_sec .text_block {
+    gap: 16px;
+  }
+  main .main_1 .accept_cryptocurrencies_sec .text_block .title {
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 629;
+    line-height: 110%;
+    letter-spacing: -0.84px;
+  }
+  main .main_1 .accept_cryptocurrencies_sec .text_block .text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    color: var(--Dark-80, rgba(17, 17, 17, 0.8));
+  }
+  main .main_1 .middle_block {
+    gap: 16px;
+  }
+  main .main_1 .middle_block .left {
+    gap: 16px;
+  }
+  main .main_1 .middle_block .left .real_time_block,
+  main .main_1 .middle_block .left .one_click_block {
+    padding: 32px;
+    gap: 24px;
+  }
+  main .main_1 .middle_block .left .real_time_block .text_block,
+  main .main_1 .middle_block .left .one_click_block .text_block {
+    gap: 16px;
+  }
+  main .main_1 .middle_block .left .real_time_block .text_block .title,
+  main .main_1 .middle_block .left .one_click_block .text_block .title {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 629;
+    line-height: 110%;
+    letter-spacing: -0.84px;
+  }
+  main .main_1 .middle_block .left .real_time_block .text_block .text,
+  main .main_1 .middle_block .left .one_click_block .text_block .text {
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  main .main_1 .middle_block .payment_statistics {
+    padding: 32px;
+    gap: 24px;
+  }
+  main .main_1 .middle_block .payment_statistics viseo {
+    border-radius: 16px;
+  }
+  main .main_1 .middle_block .payment_statistics .text_block {
+    gap: 16px;
+  }
+  main .main_1 .middle_block .payment_statistics .text_block .title {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 629;
+    line-height: 110%;
+    letter-spacing: -0.84px;
+  }
+  main .main_1 .middle_block .payment_statistics .text_block .text {
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  main .main_1 .bot_block {
+    gap: 16px;
+  }
+  main .main_1 .bot_block .anonymous_payments,
+  main .main_1 .bot_block .send_coins_block {
+    gap: 24px;
+    padding: 0 32px 32px 32px;
+  }
+  main .main_1 .bot_block .anonymous_payments .text_block,
+  main .main_1 .bot_block .send_coins_block .text_block {
+    gap: 16px;
+  }
+  main .main_1 .bot_block .anonymous_payments .text_block .title,
+  main .main_1 .bot_block .send_coins_block .text_block .title {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 629;
+    line-height: 110%;
+    letter-spacing: -0.84px;
+  }
+  main .main_1 .bot_block .anonymous_payments .text_block .text,
+  main .main_1 .bot_block .send_coins_block .text_block .text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  main .main_1 .bot_block .anonymous_payments {
+    padding: 32px;
+  }
+  main .quick_start_using_sec {
+    padding: 32px 20px;
+    gap: 24px;
+  }
+  main .quick_start_using_sec .main_title {
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 629;
+    line-height: 110%;
+    letter-spacing: -0.96px;
+  }
+  main .quick_start_using_sec .quick_start_block {
+    gap: 16px;
+    align-items: flex-start;
+  }
+  main .quick_start_using_sec .quick_start_block .img_block3 {
+    border-radius: 24px;
+    padding: 64.476px 19.721px 63.546px 19px;
+  }
+  main .quick_start_using_sec .quick_start_block .img_block3 img {
+    width: 100%;
+  }
+  main .quick_start_using_sec .quick_start_block .img_block2 {
+    height: 277.085px;
+    border-radius: 24px;
+    padding: 0px 17.721px 0px 17px;
+  }
+  main .quick_start_using_sec .quick_start_block .img_block2 img {
+    width: 100%;
+  }
+  main .quick_start_using_sec .quick_start_block .img_block1 {
+    padding: 47px 26px 46.557px 26px;
+    border-radius: 24px;
+  }
+  main .quick_start_using_sec .quick_start_block .img_block1 img {
+    width: 100%;
+  }
+  main .quick_start_using_sec .quick_start_block .text_block {
+    flex-direction: row;
+    gap: 16px;
+  }
+  main .quick_start_using_sec .quick_start_block .text_block .cifra {
+    width: 100%;
+    max-width: 36px;
+    height: 36px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 629;
+    line-height: 110%;
+    letter-spacing: -0.72px;
+  }
+  main .quick_start_using_sec .quick_start_block .text_block .text_con {
+    gap: 16px;
+  }
+  main .quick_start_using_sec .quick_start_block .text_block .text_con .title {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 629;
+    line-height: 110%;
+    letter-spacing: -0.84px;
+  }
+  main .quick_start_using_sec .quick_start_block .text_block .text_con .mini_text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  main .quick_start_using_sec .quick_start_block .text_block .text_con .list_text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+  }
+  main .quick_start_using_sec .quick_start_block .text_block .text_con .text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  main .main_2 .main_2_sec {
+    padding: 80px 20px 40px 20px;
+    gap: 80px;
+    border-radius: 0px 0px 24px 24px;
+  }
+  main .main_2 .main_2_sec .crypto_pay_api {
+    border-radius: 24px;
+    padding: 0 32px 28px 32px;
+    height: 514px;
+    align-items: flex-end;
+    background: url(../img/API-block-mob.png);
+    background-repeat: none;
+    background-size: cover;
+  }
+  main .main_2 .main_2_sec .crypto_pay_api .info_block {
+    gap: 24px;
+  }
+  main .main_2 .main_2_sec .crypto_pay_api .info_block .title {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 629;
+    line-height: 110%;
+    letter-spacing: -0.96px;
+  }
+  main .main_2 .main_2_sec .crypto_pay_api .info_block .text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  main .main_2 .main_2_sec .crypto_pay_api .info_block a {
+    padding: 12px 32px;
+    width: 100%;
+    max-width: 100%;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+  }
+  main .main_2 .main_2_sec .for_dev {
+    padding-top: 12px;
+    gap: 24px;
+  }
+  main .main_2 .main_2_sec .for_dev .top_text .title {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 629;
+    line-height: 110%;
+    letter-spacing: -0.96px;
+  }
+  main .main_2 .main_2_sec .for_dev .top_text .text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  main .main_2 .main_2_sec .for_dev .langs {
+    gap: 12px;
+    row-gap: 24px;
+  }
+  main .main_2 .main_2_sec .for_dev .langs .lang_block img {
+    max-width: 63px;
+  }
+  main .main_2 .main_2_sec .for_dev .langs .lang_block .python_title {
+    width: 90px !important;
+  }
+  main .main_2 .main_2_sec .for_dev .langs .lang_block .title {
+    width: 104px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    word-wrap: break-word;
+    line-height: 120%;
+    text-align: center;
+  }
+  main .main_2 .main_2_sec .for_dev .open_chat {
+    padding: 12px 32px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+  }
+  footer {
+    padding: 40px 20px 30px 20px;
+  }
+  footer .footer_sec .top .logo {
+    width: 46px;
+  }
+  footer .footer_sec .top .btn_started_footer {
+    padding: 12px 32px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+  }
+  footer .footer_sec .top .footer_nav {
+    display: none;
+  }
+  footer .bot_footer {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+  }
+  .black .top_block header .header_btns .btn_started_header {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=style.css.map */

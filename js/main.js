@@ -1,50 +1,3 @@
-// document.addEventListener("DOMContentLoaded", function() {
-//     var slides = document.querySelectorAll(".slider_block");
-//     var line = document.querySelectorAll('.slider_btns .line')
-//     let intervalId = setInterval(nextSlide, 5000);
-//     let currentSlide = 0;
-
-//     function goToSlide(slideIndex) {
-//         slides[currentSlide].classList.remove("active");
-//         slides[slideIndex].classList.add("active");
-//         currentSlide = slideIndex;
-//     }
-
-//     function nextSlide() {
-//         var nextSlideIndex = (currentSlide + 1) % slides.length;
-//         line.forEach(function(element) {
-//             element.classList.remove('active');
-//         });
-//         goToSlide(nextSlideIndex);
-//         switch (nextSlideIndex) {
-//             case 2:
-//                 line[2].classList.add('active');
-//                 break;
-//             case 1:
-//                 line[1].classList.add('active');
-//                 break;
-//             case 0:
-//                 line[0].classList.add('active');
-//                 break;
-//             default:
-//                 break;
-//         }
-//     }
-
-//     line.forEach(function(button, index) {
-//         button.addEventListener('click', function() {
-//             var num = Number(index);
-//             line.forEach(function(element) {
-//                 element.classList.remove('active');
-//             });
-//             line[num].classList.add('active');
-//             goToSlide(index)
-//             clearInterval(intervalId);
-//             setTimeout(intervalId = setInterval(nextSlide, 5000), 5000)
-//         });
-//     });
-// });
-
 var slides = document.querySelectorAll(".slider_block");
 var lines = document.querySelectorAll('.slider_btns .line');
 var sec = document.querySelector('.slider_sec');
@@ -67,21 +20,23 @@ function goToSlide(slideIndex) {
 }
 
 function goTo(slideIndex) {
-    if (currentSlide == 0) {
-        currentSlide = 1
-    }
-    slides[currentSlide].classList.remove("active");
-    console.log(slides[slideIndex], currentSlide)
-    setTimeout(function() {
-        let currentSlidev2 = currentSlide
-        if (currentSlide == 0) {
-            currentSlidev2 = 3;
-        }
-        console.log(slides[slideIndex], slides[currentSlidev2], currentSlidev2)
-        slides[currentSlidev2].insertAdjacentElement("beforebegin", slides[slideIndex]);
-        slides[slideIndex].classList.add("active");
-    }, 300);
-    currentSlide = slideIndex;
+    slides.forEach(function(element) {
+        element.classList.remove('active');
+    });
+    slides[slideIndex].classList.add('active');
+    // if (currentSlide == 0) {
+    //     currentSlide = 1
+    // }
+    // slides[currentSlide].classList.remove("active");
+    // console.log(slides[slideIndex], currentSlide)
+    // let currentSlidev2 = currentSlide
+    // if (currentSlide == 0) {
+    //     currentSlidev2 = 3;
+    // }
+    // console.log(slides[slideIndex], slides[currentSlidev2], currentSlidev2)
+    // slides[currentSlidev2].insertAdjacentElement("beforebegin", slides[slideIndex]);
+    // slides[slideIndex].classList.add("active");
+    // currentSlide = slideIndex;
 }
 
 function nextSlide() {
@@ -92,7 +47,7 @@ function nextSlide() {
 }
 
 
-intervalId = setInterval(nextSlide, 5000);
+// intervalId = setInterval(nextSlide, 5000);
 
 
 lines.forEach(function(button, index) {
@@ -107,6 +62,9 @@ lines.forEach(function(button, index) {
         // setTimeout(intervalId = setInterval(nextSlide, 5000), 5000);
     });
 });
+
+
+//theme
 
 if (localStorage.theme == 'black') {
     setBlackTheme();
