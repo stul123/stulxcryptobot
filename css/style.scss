@@ -191,7 +191,7 @@ body {
         width: 100%;
         gap: 83px;
         .slider_sec {
-            max-height: 488px;
+            // max-height: 488px;
             overflow: hidden;
             display: flex;
             width: 100%;
@@ -617,6 +617,7 @@ main {
                         font-style: normal;
                         font-weight: 400;
                         line-height: 120%;
+                        max-width: 352px;
                         span {
                             color: var(--Blue, var(--General, #41A4DF));
                             font-family: Inter;
@@ -719,7 +720,19 @@ main {
                         font-style: normal;
                         font-weight: 500;
                         line-height: 120%;
-                        list-style: inside;
+                        display: flex;
+                        flex-direction: row;
+                        &::before {
+                            content: "·";
+                            font-size: 40px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            text-align: center;
+                            max-height: 29px;
+                            margin-left: 5px;
+                            margin-right: 12px;
+                        }
                         span {
                             color: var(--Dark-80, rgba(17, 17, 17, 0.80));
                             font-family: Inter;
@@ -1068,7 +1081,7 @@ footer {
         padding: 20px !important;
     }
     .slider .slider_con .slider_sec {
-        max-height: 415px;
+        // max-height: 415px;
     }
     main .main_1 .bot_block,
     main .main_1 .middle_block {
@@ -1095,7 +1108,7 @@ footer {
         width: 200px;
     }
     .slider .slider_con .slider_sec {
-        max-height: 484px;
+        // max-height: 484px;
     }
 }
 
@@ -1104,7 +1117,7 @@ footer {
         font-size: 40px;
     }
     .slider .slider_con .slider_sec {
-        max-height: 370px;
+        // max-height: 370px;
     }
     .slider .slider_con .slider_block .main_block_slider .text_block .title {
         width: 100%;
