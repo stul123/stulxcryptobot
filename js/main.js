@@ -126,7 +126,6 @@ function toggle(index) {
     });
     var blockheight = window.getComputedStyle(sliderLine).getPropertyValue('height');
     if (blockheight == "595px") {
-        console.log("mob");
         switch (index) {
             case 0:
                 sliderLine.style.top = `0px`;
@@ -166,7 +165,6 @@ function toggle(index) {
 function nextSlide() {
     var topValue = window.getComputedStyle(sliderLine).getPropertyValue('top');
     var blockheight = window.getComputedStyle(sliderLine).getPropertyValue('height');
-
     console.log(topValue, topValue.substring(0, 2))
     if (blockheight == "595px") {
         switch (topValue.substring(0, 2)) {
@@ -183,7 +181,7 @@ function nextSlide() {
                 break;
         }
     } else {
-        switch (topValue[0, 2]) {
+        switch (topValue[0]) {
             case "-":
                 toggle(0)
                 break;
@@ -195,5 +193,4 @@ function nextSlide() {
                 break;
         }
     }
-
 }
