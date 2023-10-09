@@ -1,3 +1,4 @@
+//slider
 var slides = document.querySelectorAll(".slider_block");
 var lines = document.querySelectorAll('.slider_btns .line');
 var sec = document.querySelector('.slider_sec');
@@ -65,58 +66,4 @@ lines.forEach(function(button, index) {
 
 
 //theme
-
-if (localStorage.theme == 'black') {
-    setBlackTheme();
-} else if (localStorage.theme == 'white') {} else {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        setBlackTheme();
-    }
-}
-document.querySelector('.theme_btn').addEventListener('click', function() {
-    if (document.querySelector('body').classList.contains("black")) {
-        setWhiteTheme();
-        localStorage.setItem("theme", "white");
-    } else {
-        setBlackTheme();
-        localStorage.setItem("theme", "black");
-    }
-});
-
-function setBlackTheme() {
-    document.querySelector('body').classList.add('black');
-    document.querySelector('.theme_btn img').src = './img/mode_black.svg';
-    document.querySelector('.top_phone').src = './img/phone_black.png';
-    document.querySelector('.populare img').src = './img/photo-bots_black.png';
-    document.querySelector('.accept_cryptocurrencies_sec source').src = './video/Cryptocurrencies_dark.mp4';
-    document.querySelector('.accept_cryptocurrencies_sec video').load();
-    document.querySelector('.anonymous_payments source').src = './video/Anonymous payments_dark.mp4';
-    document.querySelector('.anonymous_payments video').load();
-    document.querySelector('.payment_statistics source').src = './video/Stats_dark.mp4';
-    document.querySelector('.payment_statistics video').load();
-    document.querySelector('.real_time_block source').src = './video/Real-timeexchange_dark.mp4';
-    document.querySelector('.real_time_block video').load();
-    document.querySelector('.one_click_block source').src = './video/One click to start_dark.mp4';
-    document.querySelector('.one_click_block video').load();
-    document.querySelector('.send_coins_block source').src = './video/Send coins to users_dark.mp4';
-    document.querySelector('.send_coins_block video').load();
-}
-
-function setWhiteTheme() {
-    document.querySelector('body').classList.remove('black');
-    document.querySelector('.theme_btn img').src = './img/mode.svg';
-    document.querySelector('.top_phone').src = './img/phone.png';
-    document.querySelector('.populare img').src = './img/photo-bots.png';
-    document.querySelector('.accept_cryptocurrencies_sec source').src = './video/Cryptocurrencies.mp4';
-    document.querySelector('.accept_cryptocurrencies_sec video').load();
-    document.querySelector('.anonymous_payments source').src = './video/Anonymous payments.mp4';
-    document.querySelector('.anonymous_payments video').load();
-    document.querySelector('.payment_statistics source').src = './video/Stats.mp4';
-    document.querySelector('.payment_statistics video').load();
-    document.querySelector('.real_time_block source').src = './video/Real-timeexchange.mp4';
-    document.querySelector('.real_time_block video').load();
-    document.querySelector('.one_click_block source').src = './video/One click to start.mp4';
-    document.querySelector('.one_click_block video').load();
-    document.querySelector('.send_coins_block source').src = './video/Send coins to users.mp4';
-    document.querySelector('.send_coins_block video').load();
-}
+theme

@@ -54,6 +54,11 @@ body {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                cursor: pointer;
+                svg {
+                    width: 40px;
+                    height: 40px;
+                }
                 img {
                     cursor: pointer;
                 }
@@ -136,6 +141,24 @@ body {
                 align-items: flex-start;
                 justify-content: flex-start;
                 gap: 16px;
+                .bots_block {
+                    display: flex;
+                    .photo_block {
+                        background: #fff;
+                        border-radius: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 4px;
+                        margin-left: -33px;
+                        &:first-child {
+                            margin-left: 0px
+                        }
+                        img {
+                            border-radius: 100%;
+                        }
+                    }
+                }
                 p {
                     color: var(--Dark, #0D0D12);
                     font-family: Inter;
@@ -207,10 +230,9 @@ body {
                 justify-content: center;
                 align-items: center;
                 border-radius: 40px;
-                width: 100%;
                 background: var(--BG-pink, linear-gradient(340deg, #FAACA8 8.42%, #DDD6F3 91.45%));
                 img {
-                    width: 100%;
+                    width: 395px;
                 }
             }
             .main_block_slider {
@@ -1026,6 +1048,7 @@ footer {
     main .main_2 {
         background: #18181D;
     }
+    .top_block .main_top_block .left .populare .bots_block .photo_block,
     main .main_2 .main_2_sec {
         background: #0D0D12;
     }
@@ -1137,8 +1160,12 @@ footer {
                 .populare {
                     align-items: center;
                     padding-top: 12px;
+                    .bots_block .photo_block {
+                        padding: 2px;
+                        margin-left: -16px;
+                    }
                     img {
-                        max-width: 250px;
+                        max-width: 59px;
                     }
                     p {
                         font-size: 18px;
@@ -1155,6 +1182,7 @@ footer {
         .slider_con {
             flex-direction: column;
             gap: 32px;
+            padding: 0;
             .slider_sec {
                 max-height: 718px;
                 .slider_block1 {
@@ -1172,6 +1200,7 @@ footer {
                         border-radius: 24px;
                         img {
                             max-width: 300px;
+                            width: 100%;
                         }
                     }
                     .main_block_slider {
@@ -1184,7 +1213,7 @@ footer {
                             gap: 24px;
                             .title {
                                 text-align: center;
-                                font-size: 32px;
+                                font-size: 31px;
                                 font-style: normal;
                                 font-weight: 629;
                                 line-height: 110%;
