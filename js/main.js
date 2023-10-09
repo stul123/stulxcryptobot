@@ -66,4 +66,37 @@ lines.forEach(function(button, index) {
 
 
 //theme
-theme
+const blocks = ["accept_cryptocurrencies_sec", "anonymous_payments", "payment_statistics", "real_time_block", "one_click_block", "send_coins_block"];
+const sources = ["Cryptocurrencies", "Anonymous payments", "Stats", "Real-timeexchange", "One click to start", "Send coins to users"]
+
+if (localStorage.theme == 'black') {
+    setTheme("_dark", "moon")
+} else if (localStorage.theme == 'white') {} else {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setTheme("_dark", "moon")
+    }
+}
+
+document.querySelector('.theme_btn').addEventListener('click', function() {
+    if (document.querySelector('body').classList.contains("black")) {
+        setTheme("", "sun")
+        localStorage.setItem("theme", "white");
+    } else {
+        setTheme("_dark", "moon")
+        localStorage.setItem("theme", "black");
+    }
+});
+
+function setTheme(theme, mode) {
+    if (theme == "_dark") {
+        document.querySelector('body').classList.add('black');
+    } else {
+        document.querySelector('body').classList.remove('black');
+    }
+    document.querySelector('.top_phone').src = `./img/phone${theme}.png`;
+    document.querySelector('.theme_btn use').setAttribute("xlink:href", `./img/mode.svg#${mode}`);
+    blocks.forEach((block, index) => {
+        document.querySelector(`.${block} source`).src = `./video/${sources[index] + theme}.mp4`;
+        document.querySelector(`.${block} video`).load();
+    });
+}
