@@ -214,12 +214,10 @@ body {
 }
 .slider .slider_con .slider_block.active {
   opacity: 1;
-  display: flex;
 }
 .slider .slider_con .slider_block {
-  opacity: 0;
-  display: none;
-  transition: all 0.3s linear;
+  height: 409px;
+  display: flex;
   width: 100%;
   justify-content: space-between;
 }

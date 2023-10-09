@@ -216,12 +216,12 @@ body {
         }
         .slider_block.active {
             opacity: 1;
-            display: flex;
         }
         .slider_block {
-            opacity: 0;
-            display: none;
-            transition: all .3s linear;
+            // opacity: 0;
+            // display: none;
+            height: 409px;
+            display: flex;
             width: 100%;
             justify-content: space-between;
             .photo_block {
@@ -1589,3 +1589,5 @@ footer {
         font-size: 18px;
     }
 }
+
+// slider
