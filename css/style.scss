@@ -1200,21 +1200,6 @@ footer {
             height: 100%;
             .slider_sec {
                 height: 100%;
-                .slider_block3 {
-                    .photo_block {
-                        padding: 37px 32.073px 37px 32.264px !important;
-                    }
-                }
-                .slider_block2 {
-                    .photo_block {
-                        padding: 92.957px 32.072px 93.109px 32.264px !important;
-                    }
-                }
-                .slider_block1 {
-                    .photo_block {
-                        padding: 93.412px 28.832px 93.048px 28.145px !important;
-                    }
-                }
                 .slider_block {
                     flex-direction: column;
                     gap: 32px;
@@ -1224,6 +1209,9 @@ footer {
                     .photo_block {
                         width: 100%;
                         border-radius: 24px;
+                        padding: 20px 30px !important;
+                        width: 335px;
+                        height: 335px;
                         img {
                             max-width: 300px;
                             width: 100%;
