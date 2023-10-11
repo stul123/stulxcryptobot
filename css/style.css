@@ -84,6 +84,10 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 120%;
+  transition: background-color ease-in 0.3s;
+}
+.top_block header .header_btns .btn_started_header:hover {
+  background: rgba(65, 164, 223, 0.16);
 }
 .top_block .main_top_block {
   display: flex;
@@ -137,6 +141,10 @@ body {
   line-height: 120%;
   max-width: 196px;
   cursor: pointer;
+  transition: background-color ease-in 0.3s;
+}
+.top_block .main_top_block .left .btn_started_main:hover {
+  background: #297EE2;
 }
 .top_block .main_top_block .left .populare {
   padding-top: 26px;
@@ -290,6 +298,10 @@ body {
   font-weight: 500;
   line-height: 120%;
   cursor: pointer;
+  transition: background-color ease-in 0.3s;
+}
+.slider .slider_con .slider_block .main_block_slider .text_block .open_api_btn:hover {
+  background: #297EE2;
 }
 .slider .slider_btns {
   height: 408px;
@@ -455,8 +467,6 @@ main .main_1 .middle_block .left .real_time_block {
 }
 main .main_1 .middle_block .left .real_time_block video {
   width: 100%;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 6px), 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 6px), 0 100%);
 }
 main .main_1 .middle_block .left .real_time_block .text_block {
   display: flex;
@@ -855,6 +865,10 @@ main .main_2 .main_2_sec .crypto_pay_api .info_block a {
   padding: 18px 42px;
   border-radius: 900px;
   border: 1px solid var(--White-60, rgba(255, 255, 255, 0.6));
+  transition: border-color ease-in 0.3s;
+}
+main .main_2 .main_2_sec .crypto_pay_api .info_block a:hover {
+  border-color: #fff;
 }
 main .main_2 .main_2_sec .for_dev {
   display: flex;
@@ -927,6 +941,10 @@ main .main_2 .main_2_sec .for_dev .open_chat {
   font-style: normal;
   font-weight: 500;
   line-height: 120%;
+  transition: background-color ease-in 0.3s;
+}
+main .main_2 .main_2_sec .for_dev .open_chat:hover {
+  background: #297EE2;
 }
 
 footer {
@@ -982,6 +1000,10 @@ footer .footer_sec .top .btn_started_footer {
   padding: 18px 42px;
   border-radius: 900px;
   border: 1px solid var(--White-60, rgba(255, 255, 255, 0.6));
+  transition: border-color ease-in 0.3s;
+}
+footer .footer_sec .top .btn_started_footer:hover {
+  border-color: #fff;
 }
 footer .footer_sec .bot_footer {
   color: var(--White, #FFF);
@@ -1034,6 +1056,10 @@ footer .footer_sec .bot_footer {
   font-weight: 500;
   line-height: 120%;
   background: none;
+  transition: border-color ease-in 0.3s;
+}
+.black .top_block header .header_btns .btn_started_header:hover {
+  border-color: #fff;
 }
 .black .slider {
   background: var(--BG-dark, #18181D);
@@ -1044,7 +1070,7 @@ footer .footer_sec .bot_footer {
 .black main .main_1 .middle_block .left .real_time_block,
 .black main .main_1 .middle_block .left .one_click_block,
 .black main .main_1 .bot_block .send_coins_block {
-  background: var(--BG-dark, #18181D);
+  background: #17171b;
 }
 .black main .quick_start_using_sec {
   background: var(--Dark, #18181D);
@@ -1589,4 +1615,11 @@ footer .footer_sec .bot_footer {
   .black .top_block header .header_btns .btn_started_header {
     font-size: 18px;
   }
+}
+#cryptobot_link {
+  transition: all 0.2s ease-in;
+}
+#cryptobot_link:hover {
+  color: #297EE2;
+  border-bottom: 1px solid #297EE2;
 }/*# sourceMappingURL=style.css.map */

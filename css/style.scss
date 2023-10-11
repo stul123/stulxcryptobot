@@ -80,6 +80,10 @@ body {
                 font-style: normal;
                 font-weight: 500;
                 line-height: 120%;
+                transition: background-color ease-in .3s;
+                &:hover {
+                    background: rgba(65, 164, 223, 0.16);
+                }
             }
         }
     }
@@ -133,6 +137,10 @@ body {
                 line-height: 120%;
                 max-width: 196px;
                 cursor: pointer;
+                transition: background-color ease-in .3s;
+                &:hover {
+                    background: #297EE2;
+                }
             }
             .populare {
                 padding-top: 26px;
@@ -288,6 +296,10 @@ body {
                         font-weight: 500;
                         line-height: 120%;
                         cursor: pointer;
+                        transition: background-color ease-in .3s;
+                        &:hover {
+                            background: #297EE2;
+                        }
                     }
                 }
             }
@@ -453,7 +465,6 @@ main {
                     width: 100%;
                     video {
                         width: 100%;
-                        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 6px), 0 100%);
                     }
                     .text_block {
                         display: flex;
@@ -852,6 +863,10 @@ main {
                         padding: 18px 42px;
                         border-radius: 900px;
                         border: 1px solid var(--White-60, rgba(255, 255, 255, 0.60));
+                        transition: border-color ease-in .3s;
+                        &:hover {
+                            border-color: #fff;
+                        }
                     }
                 }
             }
@@ -925,6 +940,10 @@ main {
                     font-style: normal;
                     font-weight: 500;
                     line-height: 120%;
+                    transition: background-color ease-in .3s;
+                    &:hover {
+                        background: #297EE2;
+                    }
                 }
             }
         }
@@ -981,6 +1000,10 @@ footer {
                 padding: 18px 42px;
                 border-radius: 900px;
                 border: 1px solid var(--White-60, rgba(255, 255, 255, 0.60));
+                transition: border-color ease-in .3s;
+                &:hover {
+                    border-color: #fff;
+                }
             }
         }
         .bot_footer {
@@ -1035,6 +1058,10 @@ footer {
         font-weight: 500;
         line-height: 120%;
         background: none;
+        transition: border-color ease-in .3s;
+        &:hover {
+            border-color: #fff;
+        }
     }
     .slider {
         background: var(--BG-dark, #18181D);
@@ -1045,7 +1072,7 @@ footer {
     main .main_1 .middle_block .left .real_time_block,
     main .main_1 .middle_block .left .one_click_block,
     main .main_1 .bot_block .send_coins_block {
-        background: var(--BG-dark, #18181D);
+        background: #17171b;
     }
     main .quick_start_using_sec {
         background: var(--Dark, #18181D);
@@ -1603,4 +1630,10 @@ footer {
     }
 }
 
-// slider
+#cryptobot_link {
+    transition: all .2s ease-in;
+    &:hover {
+        color: #297EE2;
+        border-bottom: 1px solid #297EE2;
+    }
+}
